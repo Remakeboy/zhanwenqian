@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>张文骞律师 · 破产重组</title>
+<meta name="description" content="张文骞律师，重庆天忆律师事务所主任，深耕破产重整与困境企业拯救。">
+<!-- 部署为线上链接后，以下标签用于微信分享卡片，可自行补充 -->
+<meta property="og:title" content="张文骞律师 · 破产重组">
+<meta property="og:description" content="重庆天忆律师事务所主任，深耕破产重整与困境企业拯救。">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --navy:#16305c;        /* 主色 深蓝 */
+    --navy-dark:#0f2242;   /* 深蓝-暗 */
+    --navy-light:#1e3d75;  /* 深蓝-亮 */
+    --gold:#c9a86a;        /* 金色点缀 */
+    --gold-light:#e0c896;
+    --ink:#2b3442;         /* 正文 */
+    --gray:#7a8494;        /* 次要文字 */
+    --line:#e6e9ef;        /* 分隔线 */
+    --bg:#ffffff;
+    --bg-soft:#f6f8fb;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(22,48,92,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%}
+
+  /* ===== 顶部英雄区 ===== */
+  .hero{
+    position:relative;
+    background:linear-gradient(160deg,var(--navy-dark) 0%,var(--navy) 55%,var(--navy-light) 100%);
+    color:#fff;
+    padding:56px 24px 48px;
+    text-align:center;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;top:-120px;right:-120px;width:280px;height:280px;
+    border-radius:50%;background:rgba(201,168,106,.14);
+  }
+  .hero::after{
+    content:"";position:absolute;bottom:-90px;left:-90px;width:220px;height:220px;
+    border-radius:50%;background:rgba(255,255,255,.05);
+  }
+  .hero-inner{position:relative;z-index:1}
+  .avatar{
+    width:104px;height:104px;margin:0 auto 18px;border-radius:50%;
+    background:rgba(255,255,255,.14);
+    border:3px solid var(--gold);
+    overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover}
+  .avatar .placeholder{
+    color:rgba(255,255,255,.75);font-size:28px;font-weight:600;letter-spacing:2px;
+  }
+  .hero h1{font-size:26px;font-weight:700;letter-spacing:3px}
+  .hero .en-name{
+    margin-top:6px;font-size:13px;color:var(--gold-light);letter-spacing:2px;font-weight:500;
+  }
+  .hero .title{
+    display:inline-block;margin-top:14px;padding:6px 18px;
+    border:1px solid rgba(201,168,106,.65);border-radius:999px;
+    color:var(--gold-light);font-size:14px;letter-spacing:2px;
+  }
+  .hero .slogan{
+    margin-top:16px;font-size:14px;color:rgba(255,255,255,.82);letter-spacing:1px;
+  }
+
+  /* ===== 通用区块 ===== */
+  .section{padding:40px 24px}
+  .section-title{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    margin-bottom:28px;font-size:19px;font-weight:700;color:var(--navy);letter-spacing:2px;
+  }
+  .section-title::before,.section-title::after{
+    content:"";width:28px;height:1px;background:var(--gold);
+  }
+
+  /* ===== 个人简介 ===== */
+  .about{background:var(--bg-soft)}
+  .about p{font-size:15px;text-align:justify;color:var(--ink);max-width:640px;margin:0 auto}
+
+  /* ===== 专业领域 ===== */
+  .fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:640px;margin:0 auto}
+  .field-card{
+    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 16px;text-align:center;transition:transform .2s,box-shadow .2s;
+  }
+  .field-card:active{transform:scale(.98)}
+  .field-card .icon{
+    width:44px;height:44px;margin:0 auto 10px;border-radius:12px;
+    background:linear-gradient(135deg,var(--navy),var(--navy-light));
+    display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;
+  }
+  .field-card h3{font-size:15px;color:var(--navy);font-weight:600}
+  .field-card p{margin-top:6px;font-size:12px;color:var(--gray);line-height:1.5}
+
+  /* ===== 资质数据（深蓝区） ===== */
+  .stats{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff}
+  .stats-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:640px;margin:0 auto;text-align:center}
+  .stat-item .num{font-size:22px;font-weight:700;color:var(--gold-light);line-height:1.3}
+  .stat-item .label{margin-top:4px;font-size:13px;color:rgba(255,255,255,.82)}
+  .stat-note{
+    margin-top:18px;text-align:center;font-size:12px;color:rgba(255,255,255,.6);
+    max-width:640px;margin-left:auto;margin-right:auto;
+  }
+
+  /* ===== 执业经历 / 经典案例（时间线） ===== */
+  .timeline{max-width:640px;margin:0 auto;position:relative;padding-left:26px}
+  .timeline::before{
+    content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(var(--gold),var(--line));
+  }
+  .tl-item{position:relative;padding-bottom:26px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{
+    content:"";position:absolute;left:-26px;top:6px;width:12px;height:12px;border-radius:50%;
+    background:var(--gold);border:3px solid var(--bg);
+    box-shadow:0 0 0 2px var(--gold);
+  }
+  .tl-item .year{font-size:13px;color:var(--gold);font-weight:600;letter-spacing:1px}
+  .tl-item h3{font-size:15px;color:var(--navy);font-weight:600;margin-top:2px}
+  .tl-item p{font-size:13px;color:var(--gray);margin-top:4px}
+  .tl-item .tag{
+    display:inline-block;margin-top:8px;padding:2px 10px;border-radius:999px;
+    background:var(--bg-soft);border:1px solid var(--line);
+    font-size:12px;color:var(--navy);
+  }
+
+  /* ===== 联系方式 ===== */
+  .contact{background:var(--bg-soft)}
+  .contact-cards{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .contact-card{
+    display:flex;align-items:center;gap:14px;background:var(--bg);
+    border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+    text-decoration:none;color:inherit;transition:box-shadow .2s;
+  }
+  .contact-card .c-icon{
+    width:42px;height:42px;flex-shrink:0;border-radius:12px;
+    background:var(--bg-soft);display:flex;align-items:center;justify-content:center;
+    font-size:18px;
+  }
+  .contact-card .c-body{flex:1;min-width:0}
+  .contact-card .c-label{font-size:12px;color:var(--gray)}
+  .contact-card .c-value{font-size:15px;color:var(--navy);font-weight:600;word-break:break-all}
+  .contact-card .arrow{color:var(--gray);font-size:16px}
+  .contact-card:active{box-shadow:var(--shadow)}
+
+  .qr-box{
+    margin-top:18px;max-width:640px;margin-left:auto;margin-right:auto;
+    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;text-align:center;
+  }
+  .qr-box .qr-img{
+    width:190px;height:242px;margin:0 auto;border-radius:8px;
+    background:var(--bg-soft);display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--line);overflow:hidden;
+  }
+  .qr-box .qr-img img{width:100%;height:100%;object-fit:contain}
+  .qr-box .qr-img .placeholder{font-size:13px;color:var(--gray)}
+  .qr-box p{margin-top:10px;font-size:13px;color:var(--gray)}
+
+  /* ===== 页脚 ===== */
+  .footer{
+    background:var(--navy-dark);color:rgba(255,255,255,.6);
+    text-align:center;padding:24px;font-size:12px;letter-spacing:1px;
+  }
+  .footer .firm{color:rgba(255,255,255,.85);font-size:13px;margin-bottom:6px}
+
+  @media (min-width:640px){
+    .hero{padding:72px 24px 60px}
+    .fields{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+
+  <!-- ========== 顶部：照片 + 姓名 + 头衔 ========== -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="avatar">
+        <!-- 照片确认后放入：与本文档同目录，命名 avatar.jpg 即自动显示 -->
+        <img src="avatar.jpg" alt="张文骞律师" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="placeholder" style="display:none">照</div>
+      </div>
+      <h1>张文骞</h1>
+      <div class="en-name">ZHANG WENQIAN · ATTORNEY AT LAW</div>
+      <div class="title">重庆天忆律师事务所 主任</div>
+      <p class="slogan">深耕破产重组 · 专注困境企业拯救</p>
+    </div>
+  </header>
+
+  <!-- ========== 个人简介 ========== -->
+  <section class="section about">
+    <h2 class="section-title">个人简介</h2>
+    <p>
+      张文骞律师，重庆天忆律师事务所主任，重庆市企业破产案件社会中介机构管理人名册（第一批）二级管理人团队成员，
+      长期专注于破产重整、破产清算与困境企业拯救业务，在企业债务重组、破产衍生诉讼等领域具有丰富的实务经验，
+      致力于以专业、勤勉的法律服务帮助困境企业化解危机、实现重生，依法维护债权人、债务人及各方主体的合法权益。
+    </p>
+  </section>
+
+  <!-- ========== 专业领域 ========== -->
+  <section class="section">
+    <h2 class="section-title">专业领域</h2>
+    <div class="fields">
+      <div class="field-card">
+        <div class="icon">🔄</div>
+        <h3>破产重整</h3>
+        <p>重整计划制定 · 投资人招募 · 企业重生</p>
+      </div>
+      <div class="field-card">
+        <div class="icon">📉</div>
+        <h3>破产清算</h3>
+        <p>清算组工作 · 财产处置 · 债权申报审查</p>
+      </div>
+      <div class="field-card">
+        <div class="icon">🤝</div>
+        <h3>债务重组与预重整</h3>
+        <p>庭外重组 · 预重整衔接 · 债务化解方案</p>
+      </div>
+      <div class="field-card">
+        <div class="icon">🏢</div>
+        <h3>困境企业拯救</h3>
+        <p>企业纾困 · 府院联动 · 资产盘活</p>
+      </div>
+      <div class="field-card">
+        <div class="icon">⚖️</div>
+        <h3>破产衍生诉讼</h3>
+        <p>撤销权之诉 · 追收出资 · 债权确认</p>
+      </div>
+      <div class="field-card">
+        <div class="icon">📄</div>
+        <h3>企业法律顾问</h3>
+        <p>常年顾问 · 合规审查 · 风险防控</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 资质与数据 ========== -->
+  <section class="section stats">
+    <h2 class="section-title" style="color:#fff">专业资质</h2>
+    <div class="stats-wrap">
+      <div class="stat-item">
+        <div class="num">二级管理人</div>
+        <div class="label">重庆市破产案件管理人名册</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">主任</div>
+        <div class="label">重庆天忆律师事务所</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">__件</div>
+        <div class="label">办理破产案件（待补充）</div>
+      </div>
+    </div>
+    <p class="stat-note">重庆天忆律师事务所入选重庆市企业破产案件社会中介机构管理人名册（第一批）二级管理人（重庆市第五中级人民法院 2023 年公布）</p>
+  </section>
+
+  <!-- ========== 执业经历 ========== -->
+  <section class="section">
+    <h2 class="section-title">执业经历</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="year">至今</div>
+        <h3>重庆天忆律师事务所 · 主任</h3>
+        <p>负责全所破产重组业务统筹与重大案件承办，带领团队深耕破产领域。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">待补充</div>
+        <h3>（请补充执业经历）</h3>
+        <p>例如：执业起始年份、历任职务、教育背景等，提供后替换此条。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 经典案例 ========== -->
+  <section class="section" style="background:var(--bg-soft)">
+    <h2 class="section-title">经典案例</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="year">案例一 · 待补充</div>
+        <h3>（请提供案例名称/案号）</h3>
+        <p>（请简述：案件类型、处理结果、社会效果，例如“XX公司破产重整案，重整计划获法院批准，企业恢复经营，职工就业得到保障”）</p>
+        <span class="tag">破产重整</span>
+      </div>
+      <div class="tl-item">
+        <div class="year">案例二 · 待补充</div>
+        <h3>（请提供案例名称/案号）</h3>
+        <p>（请简述：案件类型、处理结果、社会效果）</p>
+        <span class="tag">破产清算 / 债务重组</span>
+      </div>
+      <div class="tl-item">
+        <div class="year">案例三 · 待补充</div>
+        <h3>（请提供案例名称/案号）</h3>
+        <p>（请简述：案件类型、处理结果、社会效果）</p>
+        <span class="tag">破产衍生诉讼</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 联系方式 ========== -->
+  <section class="section contact">
+    <h2 class="section-title">联系方式</h2>
+    <div class="contact-cards">
+      <a class="contact-card" href="tel:18508208905">
+        <div class="c-icon">📞</div>
+        <div class="c-body">
+          <div class="c-label">电话（点击直接拨打）</div>
+          <div class="c-value">185-0820-8905</div>
+        </div>
+        <div class="arrow">›</div>
+      </a>
+      <div class="contact-card">
+        <div class="c-icon">💬</div>
+        <div class="c-body">
+          <div class="c-label">微信</div>
+          <div class="c-value">扫描下方二维码添加</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qr-box">
+      <div class="qr-img">
+        <!-- 二维码确认后放入：与本文档同目录，命名 qrcode.jpg 即自动显示 -->
+        <img src="qrcode.jpg" alt="微信二维码" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="placeholder" style="display:none">微信二维码</div>
+      </div>
+      <p>长按识别二维码，添加微信咨询</p>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <div class="firm">重庆天忆律师事务所</div>
+    <div>地址：待补充 · 本文内容仅供参考，不构成法律意见</div>
+  </footer>
+
+</body>
+</html>
